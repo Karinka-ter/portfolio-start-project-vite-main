@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <!-- Серый круг -->
+  <circle cx="60" cy="60" r="55" stroke="#2d2c2c" stroke-width="3" fill="#cb9dd4"/>
+
+  <!-- Буква "К" по центру -->
+  <text x="50%" y="50%" fill="#2d2c2c" font-size="60" font-weight="bold" dominant-baseline="central" text-anchor="middle">К</text>
+</svg>
