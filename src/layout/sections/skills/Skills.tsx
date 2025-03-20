@@ -1,4 +1,4 @@
-import React from 'react';
+
 import styled from "styled-components";
 import {Skill} from './skill/Skill.tsx';
 import {Theme} from "../../../styles/Theme.tsx";

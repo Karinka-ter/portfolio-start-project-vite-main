@@ -1,4 +1,4 @@
-import React from 'react';
+
 import styled from "styled-components";
 import textImg from '../../../assets/images/text.svg'
 import photo from '../../../assets/images/photo.webp'
@@ -6,7 +6,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {SectionTitle} from "../../../components/SectionTitle.tsx";
 import {Container} from "../../../components/Container.tsx";
 import {Theme} from "../../../styles/Theme.tsx";
-import Typewriter from 'typewriter-effect';
+
 
 export const Main = () => {
     return (

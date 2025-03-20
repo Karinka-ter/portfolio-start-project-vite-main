@@ -1,4 +1,4 @@
-import React from 'react';
+
 import styled, {css} from "styled-components";
 import {Theme} from "../../styles/Theme.tsx";
 import {Link} from "react-scroll";

@@ -1,4 +1,4 @@
-import React from 'react';
+import l from '../../assets/images/logo1.svg'
 import styled from "styled-components";
 import {animateScroll as scroll} from 'react-scroll'
 
@@ -6,7 +6,7 @@ import {animateScroll as scroll} from 'react-scroll'
 export const Logo = () => {
     return (
         <a onClick={() => {scroll.scrollToTop()}}>
-            <StyledLogoImg src='/logo.svg' alt="logo"/>
+            <StyledLogoImg src={l} alt="logo"/>
         </a>
     );
 };

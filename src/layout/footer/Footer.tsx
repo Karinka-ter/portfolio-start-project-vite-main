@@ -1,4 +1,4 @@
-import React from 'react';
+
 import styled from "styled-components";
 import {Container} from "../../components/Container.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
