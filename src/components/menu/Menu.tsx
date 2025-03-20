@@ -1,28 +1,56 @@
 import React from 'react';
-import styled from "styled-components";
+import styled, {css} from "styled-components";
+import {Theme} from "../../styles/Theme.tsx";
+import {Link} from "react-scroll";
 
-export const Menu = () => {
+type MenuItemProps = {
+    head?:boolean
+}
+
+export const Menu = (props: MenuItemProps) => {
     return (
-        <StyledMenu>
+        <StyledMenu head={props.head}>
             <ul>
-                <li>
-                    <a href=""> Projects</a>
-                </li>
-                <li>
-                    <a href="">About</a>
-                </li>
-                <li>
-                    <a href="">Digital Assets</a>
-                </li>
+                <StyledLi>
+                    <Link to='skills' smooth={true}>Skills</Link>
+                </StyledLi>
+                <StyledLi>
+                    <Link to='works' smooth={true}>Projects</Link>
+                </StyledLi>
+                <StyledLi>
+                    <Link to='aboutMe' smooth={true}>About</Link>
+                </StyledLi>
             </ul>
         </StyledMenu>
     );
 };
 
-const StyledMenu = styled.nav`
+const StyledMenu = styled.nav<MenuItemProps>`
  ul{
      display: flex;
      gap: 30px
+     
+
  }
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    ${props => props.head && css<MenuItemProps>`
+       @media ${Theme.media.tablet} {
+           display: none;
+       }
+    `}
+`
+
+const StyledLi = styled.li`
+    a {
+        transition: transform 0.2s ease;
+        display: inline-block; /* Чтобы transform работал корректно */
+    }
+
+    a:hover {
+        transform: scale(1.09); /* Увеличиваем ссылку на 5% */
+    }
 `
 

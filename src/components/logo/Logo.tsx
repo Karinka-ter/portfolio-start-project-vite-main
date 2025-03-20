@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
+import {animateScroll as scroll} from 'react-scroll'
 
 
 export const Logo = () => {
     return (
-        <a href="">
+        <a onClick={() => {scroll.scrollToTop()}}>
             <StyledLogoImg src='/logo.svg' alt="logo"/>
         </a>
     );
